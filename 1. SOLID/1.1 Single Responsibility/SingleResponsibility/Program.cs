@@ -10,4 +10,5 @@ report.AddEntry(new CourseReportEntry { Name = "Flutter", Students = 1900, Ratin
 
 Console.WriteLine(report.ToString());
 
-report.SaveToFile(@"Reports", "WorkReport.txt");
+var fileReport = new FileSaver();
+fileReport.SaveToFile(@"Reports", "WorkReport.txt", report);

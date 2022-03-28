@@ -22,15 +22,19 @@ namespace SingleResponsibility.Clase
 
         public void RemoveEntryAt(int index) => _entries.RemoveAt(index);
 
-        public void SaveToFile(string directoryPath, string fileName)
-        {
-            if (!Directory.Exists(directoryPath))
-            {
-                Directory.CreateDirectory(directoryPath);
-            }
+        /// Para cumplir con el principio de responsabilidad unica debemos crear la clase 
+        /// que se encargue de guardar el archivo plano con los nombres, esta no debe estar
+        /// incluida en la clase que persiste la información.
 
-            File.WriteAllText(Path.Combine(directoryPath, fileName), ToString());
-        }
+        //public void SaveToFile(string directoryPath, string fileName)
+        //{
+        //    if (!Directory.Exists(directoryPath))
+        //    {
+        //        Directory.CreateDirectory(directoryPath);
+        //    }
+
+        //    File.WriteAllText(Path.Combine(directoryPath, fileName), ToString());
+        //}
         public override string ToString() =>
             string.Join(Environment.NewLine, _entries.Select(x => $"Curso: {x.Name}, Estudiantes: {x.Students}, Valoración: {x.Rating}"));
     }
