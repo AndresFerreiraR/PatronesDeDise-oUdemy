@@ -6,7 +6,9 @@ namespace SingleResponsibility.Clase
     using System.Collections.Generic;
     using System.Linq;
 
-
+    /// <summary>
+    /// Finalidad de la clase crear un registro de CourseReportEntry
+    /// </summary>
     public class CourseReport
     {
         private readonly List<CourseReportEntry> _entries;
