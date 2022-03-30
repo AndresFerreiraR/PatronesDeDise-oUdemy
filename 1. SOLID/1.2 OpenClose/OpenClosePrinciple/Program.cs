@@ -1,9 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OpenClosePrinciple.Clases;
+using OpenClosePrinciple.Interfaces;
 using OpenClosePrinciple.Model;
 
 var areaCalculator = new AreaCalculator();
-var listObjects = new List<object>()
+var listObjects = new List<IShape>()
 {
     new Circle { Radius = 10},
     new Rectangle {Width = 40 , Height = 20},
