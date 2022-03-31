@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenClosePrinciple", "1. SO
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 LiskovSubstitution", "1.3 LiskovSubstitution", "{8C75DAD3-56FB-48C0-9E45-0E7B26A82A02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitutionPrincipel", "1. SOLID\1.3 LiskovSubstitution\LiskovSubstitutionPrincipel\LiskovSubstitutionPrincipel.csproj", "{834D6E73-FC4E-45E9-ADDC-54104C14B853}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiskovSubstitutionPrincipel", "1. SOLID\1.3 LiskovSubstitution\LiskovSubstitutionPrincipel\LiskovSubstitutionPrincipel.csproj", "{834D6E73-FC4E-45E9-ADDC-54104C14B853}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4 InterfaceSegregation", "1.4 InterfaceSegregation", "{673AB697-09AC-4118-8611-177F26C0F4AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregationPrinciple", "1. SOLID\1.4 InterfaceSegregation\InterfaceSegregationPrinciple\InterfaceSegregationPrinciple.csproj", "{7D97872B-9843-4FCF-8C65-3B21665E73CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{834D6E73-FC4E-45E9-ADDC-54104C14B853}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{834D6E73-FC4E-45E9-ADDC-54104C14B853}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{834D6E73-FC4E-45E9-ADDC-54104C14B853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,8 @@ Global
 		{06990589-14EE-409C-969E-9EE151B44301} = {F8FFCD07-7935-4A08-8266-5946BD1CFF1A}
 		{8C75DAD3-56FB-48C0-9E45-0E7B26A82A02} = {88AC2D7C-F4C9-4FD4-B3C9-7A052DE574E2}
 		{834D6E73-FC4E-45E9-ADDC-54104C14B853} = {8C75DAD3-56FB-48C0-9E45-0E7B26A82A02}
+		{673AB697-09AC-4118-8611-177F26C0F4AE} = {88AC2D7C-F4C9-4FD4-B3C9-7A052DE574E2}
+		{7D97872B-9843-4FCF-8C65-3B21665E73CD} = {673AB697-09AC-4118-8611-177F26C0F4AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8234D1E7-72FA-4825-88CC-99B65DD7D98D}
