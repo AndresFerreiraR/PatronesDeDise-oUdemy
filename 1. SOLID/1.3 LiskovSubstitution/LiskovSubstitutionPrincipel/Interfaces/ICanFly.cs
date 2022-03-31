@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LiskovSubstitutionPrincipel.Clases
+namespace LiskovSubstitutionPrincipel.Interfaces
 {
-    public class Dog : Animal
+    public interface ICanFly : IAnimal
     {
-
+        void Fly();
     }
 }
