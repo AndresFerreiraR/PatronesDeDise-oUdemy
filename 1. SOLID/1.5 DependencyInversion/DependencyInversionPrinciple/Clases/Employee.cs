@@ -1,27 +1,24 @@
 ﻿
 namespace DependencyInversionPrinciple.Clases
 {
-    using System;
+    using DependencyInversionPrinciple.Interafce;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class Employee
     {
-        private Email _email;
-        private SMS _sms;
+        private List<IMassage> _massages;
 
-        public Employee(Email email, SMS sms)
+        public Employee(List<IMassage> massages)
         {
-            this._email = email;
-            this._sms = sms;
+            this._massages = massages;
         }
 
         public void Send()
         {
-            _email.SendEmail();
-            _sms.SendSMS();
+            _massages.ForEach(massage =>
+            {
+                massage.SendMessage();
+            });
         }
     }
 }
