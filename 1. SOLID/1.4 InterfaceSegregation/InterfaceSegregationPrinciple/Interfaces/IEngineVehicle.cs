@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregationPrinciple.Interfaces
 {
-    public interface IVehicle
+    public interface IEngineVehicle
     {
-        void Move();
-        void GetNumberOfWheel();
+        void StartEngine();
+        void StopEngine();
     }
 }

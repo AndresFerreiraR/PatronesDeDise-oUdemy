@@ -4,7 +4,7 @@ namespace InterfaceSegregationPrinciple.Clases
     using InterfaceSegregationPrinciple.Interfaces;
     using System;
 
-    public class Car : IVehicle
+    public class Car : IVehicle, IEngineVehicle
     {
         public void GetNumberOfWheel()
         {
