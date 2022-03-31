@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4 InterfaceSegregation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregationPrinciple", "1. SOLID\1.4 InterfaceSegregation\InterfaceSegregationPrinciple\InterfaceSegregationPrinciple.csproj", "{7D97872B-9843-4FCF-8C65-3B21665E73CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5 DependencyInversion", "1.5 DependencyInversion", "{702A2BDE-5AE7-4F6D-94FA-8108D45FDE9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversionPrinciple", "1. SOLID\1.5 DependencyInversion\DependencyInversionPrinciple\DependencyInversionPrinciple.csproj", "{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D97872B-9843-4FCF-8C65-3B21665E73CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +64,8 @@ Global
 		{834D6E73-FC4E-45E9-ADDC-54104C14B853} = {8C75DAD3-56FB-48C0-9E45-0E7B26A82A02}
 		{673AB697-09AC-4118-8611-177F26C0F4AE} = {88AC2D7C-F4C9-4FD4-B3C9-7A052DE574E2}
 		{7D97872B-9843-4FCF-8C65-3B21665E73CD} = {673AB697-09AC-4118-8611-177F26C0F4AE}
+		{702A2BDE-5AE7-4F6D-94FA-8108D45FDE9A} = {88AC2D7C-F4C9-4FD4-B3C9-7A052DE574E2}
+		{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255} = {702A2BDE-5AE7-4F6D-94FA-8108D45FDE9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8234D1E7-72FA-4825-88CC-99B65DD7D98D}
