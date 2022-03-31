@@ -1,2 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+using LiskovSubstitutionPrincipel.Clases;
+
+Animal animal = new Dog();
+animal.Noise = "sss";
+animal.MakeNoise();
+animal.Fly();
+
