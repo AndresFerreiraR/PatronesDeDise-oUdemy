@@ -4,4 +4,7 @@ using Builder.Clases;
 Console.WriteLine("Hello, World!");
 
 
-var sandwich = new Sandwich("Pan frances", "Tomate, Lechuga, Cebolla", "Pavo", "", "Motzarella");
+var sandwich = new SandwichAssembly(new CheeseBurger());
+sandwich.Assemble();
+Console.WriteLine($"{ sandwich.GetSandwich.Bread} {sandwich.GetSandwich.Cheese} {sandwich.GetSandwich.Protein} {sandwich.GetSandwich.Veggies} {sandwich.GetSandwich.Condiments}");
+Console.ReadLine();
