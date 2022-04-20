@@ -19,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiskovSubstitutionPrincipel
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4 InterfaceSegregation", "1.4 InterfaceSegregation", "{673AB697-09AC-4118-8611-177F26C0F4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregationPrinciple", "1. SOLID\1.4 InterfaceSegregation\InterfaceSegregationPrinciple\InterfaceSegregationPrinciple.csproj", "{7D97872B-9843-4FCF-8C65-3B21665E73CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceSegregationPrinciple", "1. SOLID\1.4 InterfaceSegregation\InterfaceSegregationPrinciple\InterfaceSegregationPrinciple.csproj", "{7D97872B-9843-4FCF-8C65-3B21665E73CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5 DependencyInversion", "1.5 DependencyInversion", "{702A2BDE-5AE7-4F6D-94FA-8108D45FDE9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversionPrinciple", "1. SOLID\1.5 DependencyInversion\DependencyInversionPrinciple\DependencyInversionPrinciple.csproj", "{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInversionPrinciple", "1. SOLID\1.5 DependencyInversion\DependencyInversionPrinciple\DependencyInversionPrinciple.csproj", "{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. PatronesCreacionales", "2. PatronesCreacionales", "{175382F6-6390-4919-85F2-3F34E16B9CF6}"
 EndProject
@@ -33,7 +33,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. PatronesComportamiento",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 Builder", "2.1 Builder", "{05374AAA-7290-41F6-8E33-4C431AE4DAEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "2. PatronesCreacionales\2.1 Builder\Builder\Builder.csproj", "{649A3CB7-ACA7-4474-BCB7-310B7506056B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "2. PatronesCreacionales\2.1 Builder\Builder\Builder.csproj", "{649A3CB7-ACA7-4474-BCB7-310B7506056B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderFluent", "2. PatronesCreacionales\2.1 Builder\BuilderFluent\BuilderFluent.csproj", "{4A6E7EE6-BA1C-4660-90A1-369E48E43E4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{649A3CB7-ACA7-4474-BCB7-310B7506056B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{649A3CB7-ACA7-4474-BCB7-310B7506056B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{649A3CB7-ACA7-4474-BCB7-310B7506056B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6E7EE6-BA1C-4660-90A1-369E48E43E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6E7EE6-BA1C-4660-90A1-369E48E43E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6E7EE6-BA1C-4660-90A1-369E48E43E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6E7EE6-BA1C-4660-90A1-369E48E43E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +88,7 @@ Global
 		{2DAD27FC-9DA9-4E9A-AE35-9B02812FF255} = {702A2BDE-5AE7-4F6D-94FA-8108D45FDE9A}
 		{05374AAA-7290-41F6-8E33-4C431AE4DAEF} = {175382F6-6390-4919-85F2-3F34E16B9CF6}
 		{649A3CB7-ACA7-4474-BCB7-310B7506056B} = {05374AAA-7290-41F6-8E33-4C431AE4DAEF}
+		{4A6E7EE6-BA1C-4660-90A1-369E48E43E4B} = {05374AAA-7290-41F6-8E33-4C431AE4DAEF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8234D1E7-72FA-4825-88CC-99B65DD7D98D}
