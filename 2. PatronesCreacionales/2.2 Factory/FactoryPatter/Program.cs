@@ -9,6 +9,11 @@ Console.WriteLine("Hello, World!");
 //var user = new User.CreateWithDefaultCountry("Rodrigo", "rodrigo@yahoo.es", "Chile");
 //Console.WriteLine($"Usuario: {user.Name} Email {user.Email}, Pais: {user.Country}");
 
-var user = UserFactory.CreateWithDefaultCountry("Rodrigo", "rodrigo@yahoo.es");
-Console.WriteLine($"Usuario: {user.Name} Email {user.Email}, Pais: {user.Country}");
+//var user = UserFactory.CreateWithDefaultCountry("Rodrigo", "rodrigo@yahoo.es");
+//Console.WriteLine($"Usuario: {user.Name} Email {user.Email}, Pais: {user.Country}");
+//Console.ReadLine();
+
+PizzaStore nYStore = new NYPizzaStore();
+Pizza pizza = nYStore.OrderPizza("Pepperoni");
+Console.WriteLine($"Pizza {pizza.Name} lista para entretgar al usuario a Andres");
 Console.ReadLine();

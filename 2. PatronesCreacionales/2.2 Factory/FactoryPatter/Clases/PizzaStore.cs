@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace FactoryPatter.Clases
 {
-    public class PizzaStore
+    public abstract class PizzaStore
     {
-        public Pizza OrderPizza(string type)
+        public abstract Pizza CreatePizza(string name);
+        public Pizza OrderPizza(string name)
         {
-            Pizza pizza = null;
+            Pizza pizza = CreatePizza(name);
 
-            switch (type)
-            {
-                case "pepperoni":
-                    pizza = new PepperoniPizza();
-                    break;
-                case "Napolitana":
-                    pizza = new NapolitanPizza();
-                    break;
-                case "California":
-                    pizza = new CaliforniaPizza();
-                    break;
-                default:
-                    break;
-            }
+            //switch (name)
+            //{
+            //    case "pepperoni":
+            //        pizza = new PepperoniPizza();
+            //        break;
+            //    case "Napolitana":
+            //        pizza = new NapolitanPizza();
+            //        break;
+            //    case "California":
+            //        pizza = new CaliforniaPizza();
+            //        break;
+            //    default:
+            //        break;
+            //}
 
             pizza.Prepare();
             pizza.Cut();
