@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryPatter.Enumeradores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,23 +9,11 @@ namespace FactoryPatter.Clases
 {
     public class NYPizzaStore : PizzaStore
     {
-        public override Pizza CreatePizza(string name)
+        public override Pizza CreatePizza(TypeOfPizza type)
         {
-            switch (name)
-            {
-                case "Pepperoni":
-                    return new NYPepperoniPizza();
-                    break;
-                case "Napolitana":
-                    return new NYNapolitanPizza();
-                    break;
-                case "California":
-                    return new NYCaliforniaPizza();
-                    break;
-                default:
-                    return null;
-                    break;
-            }
+            var pizza = (Pizza)Activator.CreateInstance(Type.GetType($"FactoryPatter.Clases.NY{Enum.GetName(typeof(TypeOfPizza), type)}Pizza"));
+            Pizza pizzaDefualt = new Pizza();
+            return pizza != null ? pizza : pizzaDefualt;
         }
     }
 }

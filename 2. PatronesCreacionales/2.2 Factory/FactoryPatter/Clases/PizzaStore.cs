@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryPatter.Enumeradores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,10 @@ namespace FactoryPatter.Clases
 {
     public abstract class PizzaStore
     {
-        public abstract Pizza CreatePizza(string name);
-        public Pizza OrderPizza(string name)
+        public abstract Pizza CreatePizza(TypeOfPizza type);
+        public Pizza OrderPizza(TypeOfPizza type)
         {
-            Pizza pizza = CreatePizza(name);
+            Pizza pizza = CreatePizza(type);
 
             //switch (name)
             //{
