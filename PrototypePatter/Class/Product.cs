@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace PrototypePatter.Class
 {
-    public class Product : IPrototype<Product>
+    [Serializable]
+    public class Product /*: IPrototype<Product>*/
     {
         public string Name { get; set; }
         public Category Category { get; set; }
@@ -28,9 +29,9 @@ namespace PrototypePatter.Class
         //    return new Product(Name, (Category)Category.Clone());
         //}
 
-        public Product DeepCoppy()
-        {
-            return new Product(Name, Category.DeepCoppy());
-        }
+        //public Product DeepCoppy()
+        //{
+        //    return new Product(Name, Category.DeepCoppy());
+        //}
     }
 }

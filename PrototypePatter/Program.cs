@@ -3,6 +3,13 @@ using PrototypePatter.Class;
 
 Console.WriteLine("Hello, World!");
 
+
+/*
+ * Primer consumo usando ICloneable
+ * 
+ * 
+ * 
+ */
 //var noteBook1 = new Product("Macbook", new Category("Computers"));
 //var iphone = (Product)noteBook1.Clone();
 //iphone.Name = "Iphone";
@@ -11,7 +18,7 @@ Console.WriteLine("Hello, World!");
 //Console.WriteLine(iphone);
 
 var noteBook1 = new Product("Macbook", new Category("Computers"));
-var cellPhone = (Product)noteBook1.DeepCoppy();
+var cellPhone = (Product)noteBook1.DeepCopy();
 cellPhone.Name = "Iphone";
 cellPhone.Category.Name = "MobilePhone";
 Console.WriteLine(noteBook1);

@@ -2,7 +2,8 @@
 
 namespace PrototypePatter.Class
 {
-    public class Category : IPrototype<Category>
+    [Serializable]
+    public class Category /*: IPrototype<Category>*/
     {
         public string Name { get; set; }
 
@@ -16,9 +17,9 @@ namespace PrototypePatter.Class
         //    return new Category(this.Name);
         //}
 
-        public Category DeepCoppy()
-        {
-            return new Category(this.Name);
-        }
+        //public Category DeepCoppy()
+        //{
+        //    return new Category(this.Name);
+        //}
     }
 }
