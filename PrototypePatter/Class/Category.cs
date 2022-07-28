@@ -1,6 +1,8 @@
-﻿namespace PrototypePatter.Class
+﻿using PrototypePatter.Interface;
+
+namespace PrototypePatter.Class
 {
-    public class Category : ICloneable
+    public class Category : IPrototype<Category>
     {
         public string Name { get; set; }
 
@@ -9,7 +11,12 @@
             this.Name = _Name;
         }
 
-        public object Clone()
+        //public object Clone()
+        //{
+        //    return new Category(this.Name);
+        //}
+
+        public Category DeepCoppy()
         {
             return new Category(this.Name);
         }

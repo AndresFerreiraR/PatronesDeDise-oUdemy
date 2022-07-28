@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrototypePatter.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrototypePatter.Class
 {
-    public class Product : ICloneable
+    public class Product : IPrototype<Product>
     {
         public string Name { get; set; }
         public Category Category { get; set; }
@@ -22,9 +23,14 @@ namespace PrototypePatter.Class
             return $"Producto: {Name} Categoría: {Category.Name}";
         }
 
-        public object Clone()
+        //public object Clone()
+        //{
+        //    return new Product(Name, (Category)Category.Clone());
+        //}
+
+        public Product DeepCoppy()
         {
-            return new Product(Name, (Category)Category.Clone());
+            return new Product(Name, Category.DeepCoppy());
         }
     }
 }
