@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using FactoryPatter.Clases;
+using FactoryPatter.Enumeradores;
 
 Console.WriteLine("Hello, World!");
 
@@ -14,6 +15,6 @@ Console.WriteLine("Hello, World!");
 //Console.ReadLine();
 
 PizzaStore nYStore = new NYPizzaStore();
-Pizza pizza = nYStore.OrderPizza("Pepperoni");
+Pizza pizza = nYStore.OrderPizza(TypeOfPizza.Pepperoni);
 Console.WriteLine($"Pizza {pizza.Name} lista para entretgar al usuario a Andres");
 Console.ReadLine();
