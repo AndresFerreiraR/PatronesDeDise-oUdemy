@@ -12,8 +12,9 @@ namespace SingletonPattern.Classes
 
         private Dictionary<string, int> _capitals = new Dictionary<string, int>();
 
-        public SingletonDataContainer()
+        private SingletonDataContainer()
         {
+            Console.WriteLine("Inicializacion de SingletonDataContainer");
             var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources\\Capitals.txt");
             var elements = File.ReadAllLines(path);
             for(int i = 0; i < elements.Length; i += 2)
@@ -21,6 +22,9 @@ namespace SingletonPattern.Classes
                 _capitals.Add(elements[i], int.Parse(elements[i + 1]));
             }
         }
+
+        private static SingletonDataContainer instance  = new();
+        public static SingletonDataContainer Instance => instance;
 
         public int GetPopulation(string name)
         {
