@@ -9,9 +9,26 @@ namespace AdapterPatter.Classes
 {
     public class JsonConverter
     {
-        public string GetJson()
+
+        private List<Product> products;
+
+        public JsonConverter(List<Product> products)
         {
-            return JsonConvert.SerializeObject(ProductDataProvider.GetData(), Formatting.Indented);
+            this.products = products;
+        }
+
+
+        //public string GetJson()
+        //{
+        //    var result = JsonConvert.SerializeObject(products, Formatting.Indented);
+        //    Console.WriteLine(result);
+        //    return JsonConvert.SerializeObject(ProductDataProvider.GetData(), Formatting.Indented);
+        //}
+
+        public void ConvertToJson()
+        {
+            var result = JsonConvert.SerializeObject(products, Formatting.Indented);
+            Console.WriteLine(result);
         }
     }
 }

@@ -11,6 +11,12 @@ namespace AdapterPatter.Classes
         public string name { get; set; }
         public int price { get; set; }
 
+
+        public Product()
+        {
+
+        }
+
         public Product(string _name, int _price)
         {
             this.name = _name;
